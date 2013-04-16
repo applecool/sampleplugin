@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <project name="SamplePlugin" default="jar" basedir=".">
 
-	 <property name="pathvisio.dir" value="../common-bundles/trunk/"/>
+	 <property name="pathvisio.dir" value="../trunk/"/>
 
-		  <property name="common.bundles" value="../common-bundles/trunk/"/>
+		  <property name="common.bundles" value="../trunk/"/>
 	<import file="${pathvisio.dir}/plugin-common.xml"/>
 	
 	<path id="project.class.path">
@@ -16,9 +16,7 @@
 			<fileset dir="${pathvisio.dir}/lib">
 				<include name="**/*.jar" />
 			</fileset>
-	       <fileset dir="lib">
-	       		<include name="**/*.jar" />  
-	       </fileset>
+	      
 		</path>
 	<path id="exe.bundle">
 			<fileset dir="${pathvisio.dir}/modules">
@@ -27,9 +25,7 @@
 			<fileset dir="${pathvisio.dir}/lib">
 				<include name="**/*.jar" />
 			</fileset>
-	       <fileset dir="lib">
-	       		<include name="**/*.jar" />  
-	       </fileset>
+	      
 		   <pathelement location="${jar.name}"/>
 		</path>
 	
